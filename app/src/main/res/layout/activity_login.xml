@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEFDFDFD"
+    tools:context=".Login">
+    d
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/fire">
+
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutFullName"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/imageLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+
+        app:errorEnabled="true"
+
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/fullname"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/txtLayoutFullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:errorEnabled="true"
+        app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+        app:startIconTint="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mpp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email"
+            android:inputType="text" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/mp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E91E63"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:foregroundTint="#E91E63"
+        android:text="Forget Password?      "
+
+        android:textAlignment="textEnd"
+        android:textColor="#FFE91E63">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_dont_have_an_account">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/createAccountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="   Create An Account"
+            android:textColor="#E91E63">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
